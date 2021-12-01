@@ -1,0 +1,54 @@
+<div class="w3layouts-top-strip">
+  <div class="container">
+    <div class="logo">
+      <h1>
+        <a href="{% url 'home'%}"><span>PNRST</span></a>
+      </h1>
+    </div>
+    <div class="agileits-contact-info text-right">
+      <ul>
+        <li>
+          <!-- TODO add envelope icon -->
+          <span
+            class="glyphicon glyphicon-envelope"
+            aria-hidden="true"
+          ></span
+          ><a href="mailto:pnrstwc50@gmail.com">e-mail</a>
+        </li>
+        <li>
+          <!-- TODO add phone icon -->
+          <span
+            class="glyphicon glyphicon-envelope"
+            aria-hidden="true"
+          ></span
+          >(+243) 813 525 420
+        </li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+  </div>
+  
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+    <li><a class="{{active.home}}" href="{% url 'home' %}">Acceuil</a></li>
+    <li><a class="{{active.ambitions}}" href="{% url 'ambitions' %}">ambitions</a></li>
+    <li><a class="{{active.news}}" href="{% url 'news' %}">Actualités</a></li>
+    <li><a class="{{active.about}}" href="{% url 'about' %}">A propos</a></li>
+    <li><a class="{{active.contact}}" href="{% url 'contact' %}">Contacts</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>

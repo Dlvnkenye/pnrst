@@ -1,0 +1,137 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+    <link
+      href="{static 'css/font-awesome.min.css'}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- fontawesome -->
+    <link
+      href="{% static 'css/bootstrap.css'%}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      href="{% static 'css/style.css' %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="keywords" content="PNRST, satelite, prrogramme spatial" />
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery-2.1.4.min.js'%}"
+    ></script>
+  </head>
+  <body>
+    <header>
+      {% include 'pages/partials/navbar.html'%} 
+    </header>
+    <!-- about -->
+    <div class="ambitions-w3ls">
+      <div class="container">
+        <h2 class="w3ls_head">About <span>Us</span></h2>
+        <div class="agile_banner_bottom_grids">
+          <div class="col-md-6 w3layouts_about_grid_left">
+            <h4>A Propos du PNRST</h4>
+            <p>
+              Le Programme National de la Recherche Spatial et Technologique, <
+              PNRST > en sigle, est un service et une ambitions specialise qui
+              revet une importance hautement strategique et securitaire, c'est
+              la centarl de la securite numerique et spatiale en Republique
+              Democratique du Congo.
+            </p>
+            <br />
+            <p>
+              Le PNRST a pour mission officiel d'encadrer, promouvoir, organiser
+              et coordonner toutes les activites relatives a la recherche
+              spatiale et inovation technologiques en Republique Democratique du
+              Congo.
+            </p>
+            <br />
+            <p>
+              Ce programme est inscrit dans le budget de l'Etat avec la prise en
+              charge des remunerations de son personnel, des investissements,
+              des interventions scientifiques ainsi que des subventions pour son
+              fonctionnement.
+            </p>
+            <br />
+            <p>
+              Le PNRST qui garde son automie financiere, strategique et
+              administrative vise a faire de la RD Congo un pool d'intelligence
+              et de savoir-faire, un grenier agricole, un pays moderne,
+              emergent, prospere et une puissance regionale au coeur de
+              l'Afrique.
+            </p>
+          </div>
+          <div class="col-md-6 w3layouts_about_grid_right">
+            <iframe
+              width="360"
+              height="315"
+              margine="auto"
+              margin-top="20"
+              src="https://www.youtube.com/embed/TQIyFs8BV2o"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <!-- <iframe src="https://player.vimeo.com/video/25401444"></iframe> -->
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //about -->
+
+    <!-- May be on an other page team.html -->
+    <!-- team -->
+    <div class="ambitions team">
+      <div class="container">
+        <h3 class="w3ls_head">Coordination<span></span></h3>
+        <div class="agile_banner_bottom_grids">
+          <div class="container">
+            <div class="row customrow">
+              <!-- <div class="col-md-4"></div> -->
+              {% for per in personnels%}
+              <!-- TODO center coordination -->
+              <div class="col-md-3 agile_team_grid">
+                <div class="agileits_w3layouts_team_grid">
+                  <img
+                    class="img-responsive account-img"
+                    src="{% static 'img/'%}{{per.imgpath}}"
+                    alt=""
+                  />
+                </div>
+                <h4>{{per.firstname}} {{per.name}} {{per.lastname}}</h4>
+                <p>{{per.fnc}}</p>
+              </div>
+              {%endfor%}
+              <!-- <div class="col-md-{{offset}}"></div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- //team -->
+
+    <!-- footer -->
+    {%include 'pages/partials/footer.html'%}
+    <!-- /footer -->
+    <script src="{% static 'js/bootstrap.js'%}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/numscroller-1.0.js'%}"
+    ></script>
+  </body>
+</html>

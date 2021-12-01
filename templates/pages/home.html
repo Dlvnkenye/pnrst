@@ -1,0 +1,223 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+    <link
+      href="{static 'css/font-awesome.min.css'}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- fontawesome -->
+    <link
+      href="{% static 'css/bootstrap.css'%}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      href="{% static 'css/style.css' %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="Solar Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- //meta tags -->
+
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery-2.1.4.min.js'%}"
+    ></script>
+    <!-- Required-js -->
+
+    <!-- main slider-banner -->
+    <script src="{% static 'js/skdslider.js'%}"></script>
+    <link href="{% static 'css/skdslider.css'%}" rel="stylesheet" />
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        jQuery("#demo1").skdslider({
+          delay: 5000,
+          animationSpeed: 2000,
+          showNextPrev: true,
+          showPlayButton: true,
+          autoSlide: false,
+          // pauseOnHover: true,
+          animationType: "sliding",
+        });
+
+        jQuery("#responsive").change(function () {
+          $("#responsive_wrapper").width(jQuery(this).val());
+        });
+      });
+    </script>
+    
+    <!-- //main slider-banner -->
+  </head>
+  <body>
+    <!-- header -->
+    <header>{% include 'pages/partials/navbar.html'%}</header>
+    <!-- //header -->
+    <!-- top-header and slider -->
+    <div class="w3-slider">
+      <!-- main-slider -->
+      <ul id="demo1">
+        {% for slide in slides%}
+        <li>
+          <img src="{% static 'img/'%}{{slide.imgpath}}" alt="" />
+          <!--Slider Description example-->
+          <div class="slide-desc">
+            {% if slide.name != 'logo'%}
+            <h3>{{slide.name}}</h3>
+            {% endif %}
+            <p>{{slide.desc}}</p>
+          </div>
+        </li>
+        {%endfor%}
+      </ul>
+    </div>
+    <!-- //main-slider -->
+    <!-- //top-header and slider -->
+    <!-- Specialize-section -->
+    <section class="w3-about text-center">
+      <div class="container">
+        <h2 class="w3ls_head">
+          <span
+            >Programme Nationale de Recherches Spatiale et Technologique</span
+          >
+        </h2>
+        <p class="para">
+          Structure specialisee qui revet une importance hutement strategique et
+          securitaire, Centrale de Securite Numerique et Spatial en RD Congo.
+        </p>
+        <div class="col-md-4 w3l-abt-grid">
+          <!-- <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+							<a href="#" class="hi-icon icon1"><i class="fa fa-cog" aria-hidden="true"></i></a>
+						</div> -->
+          <h4>Objectifs</h4>
+          <p>Intégrer la RD Congo dans le club de grandes nations.</p>
+        </div>
+        <div class="col-md-4 w3l-abt-grid">
+          <!-- <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+							<a href="#" class="hi-icon icon2"><i class="fa fa-sun-o" aria-hidden="true"></i></a>
+						</div> -->
+          <h4>Mission</h4>
+          <p>
+            Encadrer, promouvoir, organiser et coordonner toutes les activités
+            relatives à la recherche spatial et innovations technologiques en RD
+            Congo.
+          </p>
+        </div>
+        <div class="col-md-4 w3l-abt-grid">
+          <!-- <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
+							<a href="#" class="hi-icon icon3"><i class="fa fa-gift" aria-hidden="true"></i></i></a>
+						</div> -->
+          <h4>Projet Phare</h4>
+          <p>
+            La mise en orbite des satellites propre a la RD Congo, considérée
+            comme un veritable détonateur pour métamorphoser notre État-Nation.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <!-- //Specialize-section -->
+    <!--clients-->
+    <div class="w3layouts-clients">
+      <div class="container">
+        <h3>Gain energy <span>independence</span></h3>
+        <p>
+          There Are Many Variations Of Passages Of Lorem Ipsum Available, But
+          The Majority Have Suffered In Some, By Injected Humour.Contrary To
+          Popular Belief, Lorem Ipsum Is Not Simply Random Text. It Has Roots In
+          A Piece Of Latin Literature From 45 BC, Making.
+        </p>
+      </div>
+    </div>
+    <!--//clients-->
+    <!--advantage-->
+    <div class="what-w3ls">
+      <div class="container">
+        <h3 class="w3ls_head">K.L.K <span>W.C50</span></h3>
+        <div class="text-center">
+          <!-- <h4>Mission</h4> -->
+          <p class="para">
+            Kasavubu Kabila Lumumba “KLK” est un prototype expérimental de
+            satellite, produit d'une expertise congolaise.
+          </p>
+        </div>
+        <div class="what-grids">
+          <div class="col-md-6 what-grid">
+            <div class="list-img">
+              <img
+                src="{% static 'img/prototype.jpg'%}"
+                class="img-responsive"
+                alt=""
+              />
+              <div class="textbox"></div>
+            </div>
+          </div>
+          <div class="col-md-6 what-grid1">
+            <!-- <div class="what-top">
+									<div class="what-left">
+										<i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>
+									</div>
+									<div class="what-right">
+										<h4>specifications ou details sur le prototype</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est, impedit incidunt, laboriosam </p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="what-top1">
+									<div class="what-left">
+										<i class="glyphicon glyphicon-flash" aria-hidden="true"></i>
+									</div>
+									<div class="what-right">
+										<h4>Home Energy Saving</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est, impedit incidunt, laboriosam </p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="what-top1">
+									<div class="what-left">
+										<i class="glyphicon glyphicon-fire" aria-hidden="true"></i>
+									</div>
+									<div class="what-right">
+										<h4>Wind Power</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est, impedit incidunt, laboriosam </p>
+									</div>
+									<div class="clearfix"></div>
+								</div> -->
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!--advantage-->
+    <!-- stats -->
+    <div class="stats" id="stats">
+      <div class="container"></div>
+    </div>
+    <!--//stats-->
+    <!-- footer -->
+    {%include 'pages/partials/footer.html'%}
+    <!-- //footer -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/bootstrap.js'%}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/numscroller-1.0.js'%}"
+    ></script>
+  </body>
+</html>

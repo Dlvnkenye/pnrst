@@ -1,0 +1,146 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+    <link
+      href="{% static 'css/font-awesome.min.css'%}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- fontawesome -->
+    <link
+      href="{% static 'css/bootstrap.css'%}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- Bootstrap stylesheet -->
+    <link
+      href="{% static 'css/style.css'%}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- stylesheet -->
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="Solar Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- //meta tags -->
+    <!--fonts-->
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <!--//fonts-->
+    <script
+      type="text/javascript"
+      src="{%static 'js/jquery-2.1.4.min.js'%}"
+    ></script>
+    <!-- Required-js -->
+    <!-- scriptfor smooth drop down-nav -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown").hover(
+          function () {
+            $(".dropdown-menu", this).stop(true, true).slideDown("fast");
+            $(this).toggleClass("open");
+          },
+          function () {
+            $(".dropdown-menu", this).stop(true, true).slideUp("fast");
+            $(this).toggleClass("open");
+          }
+        );
+      });
+    </script>
+    <!-- //script for smooth drop down-nav -->
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      {% include 'pages/partials/navbar.html'%} 
+    </header>
+    <!--contact-->
+    <div class="contact w3l-2">
+      <div class="container">
+        <h2 class="w3ls_head">Contactez-<span>Nous</span></h2>
+        <div class="contact-grids">
+          <div class="col-md-7 contact-grid agileinfo-5">
+            <h4>Votre Message</h4>
+            <p>
+              Lorem Ipsum is inting and typesetting in simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the is
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book.
+            </p>
+            <form action="#" method="post">
+              <label>Name</label>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your name"
+                required=""
+              />
+              <label>Email</label>
+              <input
+                type="text"
+                name="Email"
+                placeholder="Email Addresse"
+                required=""
+              />
+              <label>Objet</label>
+              <input
+                type="text"
+                name="Subject"
+                placeholder="Subject"
+                required=""
+              />
+              <label>Message</label>
+              <textarea placeholder="Message" name="Message"></textarea>
+              <input type="submit" value="Envoyer" />
+            </form>
+          </div>
+          <div class="col-5 contact-grid agileits-5">
+            <div class="contact-left">
+              <!-- <h4> Addresse</h4> -->
+              <div class="cont-info">
+                <h5>Addresse</h5>
+                <p>
+                  Institut Supérieur des Techniques Appliquées, Kinshasa, RD
+                  Congo
+                </p>
+                <h5>Email</h5>
+                <a href="mailto:pnrstwc50@gmail.com"> pnrstwc50@gmail.com</a>
+                <h5>Phone</h5>
+                <p>(+243) 813 52 54 20</p>
+                <p>(+243) 979 43 34 75</p>
+              </div>
+            </div>
+            <!-- <div class="contact-bottom wthree-5">
+							<h4>Get connected</h4>
+							<p>Lorem Ipsum is inting and typesetting in simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the is dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div> -->
+          </div>
+          <!-- <div class="clearfix"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="agile-info-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33179.94770529421!2d15.327669490592697!3d-4.308632515659422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a36a0fb114e7f%3A0x8eb9e2f35ce7ab16!2sInstitut%20Sup%C3%A9rieur%20des%20Techniques%20Appliqu%C3%A9es%20(I.S.T.A.)!5e0!3m2!1sfr!2scd!4v1638185634377!5m2!1sfr!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div> -->
+    <!--contact-->
+    {% include 'pages/partials/footer.html' %}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/bootstrap.js'%}"></script>
+  </body>
+</html>

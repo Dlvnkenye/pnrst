@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+    <link
+      href="{static 'css/font-awesome.min.css'}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- fontawesome -->
+    <link
+      href="{% static 'css/bootstrap.css'%}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      href="{% static 'css/style.css' %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="keywords" content="PNRST, satelite, prrogramme spatial" />
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery-2.1.4.min.js'%}"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      {% include 'pages/partials/navbar.html'%}
+    </header>
+    <!-- //banner -->
+    <!-- agileinfo -->
+    <div class="agileinfo">
+      <div class="container">
+        <h2 class="w3ls_head">Obje<span>ctifs</span></h2>
+        <div class="ambitions-grids">
+          <div class="col-md-4 ambitions-grid">
+            <div class="ambitions-left">
+              <p>01</p>
+            </div>
+            <div class="ambitions-right">
+              <h4>Strategiques et securitaires</h4>
+              <p>
+                - Identifier les ressources et potentialites naturelles de la
+                RDC;
+              </p>
+              <p>
+                -Traiter dans le cadre de decryptage par le systemede
+                teledetection des donnees strategiques et securitaires en appui
+                a l'expertise pour la securite, la paix,la defense nationale,
+                laprevention des incursions des ennemis ou organisations
+                criminelles et la stabilite institutionnelle;
+              </p>
+              <p>
+                - Consolider les relations multilaterales et avoir des donnees
+                satellitaires fiables en Afrique et au monde.
+              </p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="col-md-4 ambitions-grid">
+            <div class="ambitions-left">
+              <p>02</p>
+            </div>
+            <div class="ambitions-right">
+              <h4>Socio-economiques</h4>
+              <p>
+                - Organiser et surveiller l'espace geographiques ainsi que la
+                securite numerique;
+              </p>
+              <p>
+                - faciliter la formation des scientifiques Congolais et aux
+                besoins de la promotion de l'Etat;
+              </p>
+              <p>- creer des emplois remunerateurs;</p>
+              <p>
+                - mobiliser des ressources financieres additionnelles pour le
+                tresors public, des montants approximatifs de 23 milliards l'an,
+                116,7 milliards dans 5 ans et 233,5 milliards dans 10 ans.
+              </p>
+              <p>
+                Cette etude a ete egalemen certifiee par le Ministre du Budget,
+                l'Institut Geographique du Congo, l'ITIE,le PNUD, l'UE, l'OCDEC,
+                l'USAID apres la mise sur orbite de stallites de geolocalisation
+                au travers de ses 15 applications.
+              </p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="col-md-4 ambitions-grid">
+            <div class="ambitions-left">
+              <p>03</p>
+            </div>
+            <div class="ambitions-right">
+              <h4>Spatiaux et technologiques</h4>
+              <p>
+                - concevoir, construire, mettre sur orbite des engins spatiaux
+                (sattelites, drones, etc.) propres a la RD Congo pour un
+                developpement serein et en exploiter se donnees;
+              </p>
+              <p>
+                - doter le pays d'une technologie de pointe pour l'exploitation
+                et le controle de l'espace du Territoire national et d'un
+                systeme de teledetection efficace et efficiente dans le cadre de
+                decryptage des images, etc.;
+              </p>
+              <p>
+                - disposer des chercheurs, Ingenieur, Experts et Techniciens
+                congolais hautement qualifies;
+              </p>
+              <p>
+                - proposer des lois que le Parlement pourra voter pour la
+                gestion et le controle de notre espace geographique.
+              </p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //agileinfo -->
+    <!-- overview -->
+    <div class="overview w3-2">
+      <div class="container">
+        <h3 class="w3ls_head">Pro<span>jets</span></h3>
+        <div class="overview-grids">
+          <div class="col-md-6 list-grid">
+            <!-- <div class="list-img">
+							<img src="images/g4.jpg" class="img-responsive" alt=" ">
+							<div class="textbox"></div>
+						</div>						 -->
+            <h4>Immediats</h4>
+            <p>* concevoir la ambitions a multiple facettes du satellite;</p>
+            <p>- determiner les caracteristiques des materiaux;</p>
+            <p>
+              - specifier les composants, les capteurs, les recepteurs etc.;
+            </p>
+            <p>- mettre au point l'audio-vision et les applications.</p>
+          </div>
+          <div class="col-md-6 list-grid">
+            <!-- <div class="list-img">
+							<img src="{% static 'img/g4.jpg'%}" class="img-responsive" alt=" ">
+							<div class="textbox"></div>
+						</div>						 -->
+            <h4>Court terme</h4>
+            <p>
+              Le PNRST en tan que Centrale de securite numerique et spatiale se
+              propose de:
+            </p>
+            <p>
+              - <span></span>concevoir et a installer non seulment le systeme
+              des video-surveillances dans les grandes agglomerations, dans des
+              zones d'insecurite recurente et de mouvements migratoires, mais
+              aussi le systeme electronique a travers la numerisation;
+            </p>
+            <p>
+              - concevoir et fabriquer des engins spatiaux (satellites, drones,
+              ...)
+            </p>
+            <p>
+              - former localement des chercheurs, ingenieurs, des experts et des
+              technicients pour le renforcement de leur capacites et importer la
+              technologie de pointe en leur faveur aupres des agences
+              exterieurs.
+            </p>
+          </div>
+          <div class="col-md-6 list-grid">
+            <!-- <div class="list-img">
+							<img src="images/g7.jpg" class="img-responsive" alt=" ">
+							<div class="textbox"></div>
+						</div>	 -->
+            <h4>Moyen terme</h4>
+            <p>
+              Prevoir la mise au point des satellites de geolocalisation, de
+              teledetection, de communication et de navigation pour la
+              souverainete nationale.
+            </p>
+            <p>
+              En vue d'eclairer la lanternede quiconque voudrait acquerir des
+              satellites.
+            </p>
+          </div>
+          <div class="col-md-6 list-grid">
+            <!-- <div class="list-img">
+							<img src="images/g9.jpg" class="img-responsive" alt=" ">
+							<div class="textbox"></div>
+						</div>	 -->
+            <h4>Long terme</h4>
+            <p>
+              - semunir des satellites (conception, fabrication, lancement et
+              exploitation);
+            </p>
+            <p>- assurer la loggistique;</p>
+            <p>- preparer le lancement;</p>
+            <p>
+              - exploiter des donnees satellitaires par decryptage des images et
+              proceder a la maintenance des satellites a travers la station de
+              control
+            </p>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    {%include 'pages/partials/footer.html'%}
+    <script src="{% static 'js/bootstrap.js'%}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/numscroller-1.0.js'%}"
+    ></script>
+  </body>
+</html>
